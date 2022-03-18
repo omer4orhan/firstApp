@@ -1,11 +1,21 @@
-<title>My application</title>
-  <h1>Hello, World!</h1>
+<title>My first webApp</title>
+
+  <h1>This app takes three arguments for each form. First form takes an array consisted of integers, 
+second form takes an integer and third form takes an integer too. After receiving inputs, 
+the difference between second and third input is searched in the first input. If that difference 
+exists in the array then it returns true, otherwise false.</h1>
+        <br>
+        <br>
     Result is {{result}}
+        <br>
+        <br>
 
 
   <form action="compute" method="post">
         <textarea name="input1" rows="10" cols="30"></textarea>
         <textarea name="input2" rows="10" cols="30"></textarea>
+	<textarea name="input3" rows="10" cols="30"></textarea>
+        <br>
         <br>
         <input type="submit">
   </form>
