@@ -47,10 +47,13 @@ application {
     // Define the main class for the application.
     mainClass = 'firstApp.App'
     mainClass.set("firstApp.App")
-    project.setProperty("mainClassName", "firstApp.app")
+    project.setProperty("mainClassName", "firstApp.App")
 }
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+task stage(dependsOn: ['shadowJar'])
+shadowJar.mustRunAfter clean
