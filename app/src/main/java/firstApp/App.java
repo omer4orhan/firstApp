@@ -24,7 +24,7 @@ public class App {
     }
 
 
-    public static boolean search(ArrayList<Integer> array, int e, int d) {
+    public static boolean searchDifference(ArrayList<Integer> array, int e, int d) {
         System.out.println("inside search");
         if (array == null) return false;
   
@@ -67,7 +67,7 @@ public class App {
           String input3 = req.queryParams("input3").replaceAll("\\s","");
           int input3AsInt = Integer.parseInt(input3);
 
-          boolean result = App.search(inputList, input2AsInt,input3AsInt);
+          boolean result = App.searchDifference(inputList, input2AsInt,input3AsInt);
 
           Map<String, Boolean> map = new HashMap<String, Boolean>();
           map.put("result", result);

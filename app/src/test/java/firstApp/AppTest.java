@@ -16,24 +16,24 @@ class AppTest {
     @Test
    public void testFound() {
       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertTrue(App.search(array, 4,2));
+      assertTrue(App.searchDifference(array, 4,2));
     }
 
     @Test
     public void testNotFound() {
       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertFalse(App.search(array, 5,0));
+      assertFalse(App.searchDifference(array, 5,0));
     }
 
     @Test
     public void testEmptyArray() {
       ArrayList<Integer> array = new ArrayList<>();
-      assertFalse(App.search(array, 1,2));
+      assertFalse(App.searchDifference(array, 1,2));
     }
 
     @Test
     public void testNull() {
-      assertFalse(App.search(null, 1,2));
+      assertFalse(App.searchDifference(null, 1,2));
     }
 
 }
